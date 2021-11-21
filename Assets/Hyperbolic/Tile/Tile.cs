@@ -35,7 +35,7 @@ namespace Hyperbolic.Tile
 
         private void AssignPosition(float step)
         {
-            step = step+ 0.02f;
+            step = step+ 0.025f;
             if (chunkMap == ChunkMap.center) TileUtils.MoveDiscrete(gameObject, 0, 0, false);
             if (chunkMap == ChunkMap.up) TileUtils.MoveDiscrete(gameObject, step, 0, false);
             if (chunkMap == ChunkMap.left) TileUtils.MoveDiscrete(gameObject, 0, step, false);
