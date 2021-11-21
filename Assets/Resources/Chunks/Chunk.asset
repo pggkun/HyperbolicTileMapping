@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08de7935ebed3594d94a2bc215d2c84e, type: 3}
+  m_Name: Chunk
+  m_EditorClassIdentifier: 
+  tiles:
+  - tile: {fileID: 11400000, guid: ea6a0133904e4f84eb218bbd2525da40, type: 2}
+    chunkMap: 0
+  - tile: {fileID: 11400000, guid: cee9205f61cd2014e971dcf09dc58bd8, type: 2}
+    chunkMap: 1
+  - tile: {fileID: 11400000, guid: c75db525bffebd845b8d37ff85be5f7d, type: 2}
+    chunkMap: 2
+  - tile: {fileID: 11400000, guid: 47fe6640cf93e284bb518cbdc30ec26f, type: 2}
+    chunkMap: 3
+  - tile: {fileID: 11400000, guid: aa68570712e9afc40ab3e55ccdb0142a, type: 2}
+    chunkMap: 4
+  - tile: {fileID: 11400000, guid: ca098c1f954296043b5fe8e4a071da17, type: 2}
+    chunkMap: 9
+  - tile: {fileID: 11400000, guid: 1f2fe14b2f1ce334b8867c0c1447266b, type: 2}
+    chunkMap: 10
+  - tile: {fileID: 11400000, guid: f7321c685be70684a92906e5c96ce163, type: 2}
+    chunkMap: 11
+  - tile: {fileID: 11400000, guid: 3f123369d97c3384cbde445bf2a53987, type: 2}
+    chunkMap: 12
+  - tile: {fileID: 11400000, guid: 91c864f2bd14b354c9473df035f3d75d, type: 2}
+    chunkMap: 5
+  - tile: {fileID: 11400000, guid: d870a73d076ea874eb4a1c6dc17c4f67, type: 2}
+    chunkMap: 7
+  - tile: {fileID: 11400000, guid: dbebb5ae8a3b2e347bc40955f3e1bc12, type: 2}
+    chunkMap: 6
+  - tile: {fileID: 11400000, guid: 8f21b8c24305fbf4aa2e77112787d465, type: 2}
+    chunkMap: 8
