@@ -1,0 +1,24 @@
+{
+    "name": "com.pggc.hyperbolic",
+    "version": "1.0.0",
+    "displayName": "Hyperbolic Tile Mapping",
+    "description": "Allows Unity to render and move the Hyperbolic Plane using tile maps",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "keywords": [
+        "keyword1",
+        "keyword2",
+        "keyword3"
+    ],
+    "author": {
+        "name": "P. G. G. Costa",
+        "email": "sonnglung@gmail.com"
+    },
+    "samples": [
+        {
+            "displayName": "Sample 1",
+            "description": "Scene with chunck of 13 named tiles",
+            "path": "Samples~/TileMapSample"
+        }
+    ]
+}
