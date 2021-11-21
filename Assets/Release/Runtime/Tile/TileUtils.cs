@@ -7,6 +7,10 @@ namespace Hyperbolic.Tile
 {
     public class TileUtils
     {
+        /// <summary>
+        /// Retorna a posição global a partir de uma posição local assumindo
+        /// um GameObject como referência e uma escala.
+        /// </summary>
         public static Vector3 LocalToWorld(GameObject obj, Vector3 u, Vector3 scale)
         {
             Matrix4x4 localToWorld = obj.transform.localToWorldMatrix;
@@ -18,6 +22,10 @@ namespace Hyperbolic.Tile
             return localNormalized * scale;
         }
 
+        /// <summary>
+        /// Retorna a posição local a partir de uma posição global assumindo
+        /// um GameObject como referência e uma escala.
+        /// </summary>
         public static Vector3 WorldToLocal(GameObject obj, Vector3 u, Vector3 scale)
         {
             Vector3 inverseScale = new Vector3(1f / scale.x, 1f / scale.y, 1f / scale.z);
@@ -30,6 +38,10 @@ namespace Hyperbolic.Tile
             return localNormalized * inverseScale;
         }
 
+        /// <summary>
+        /// Projeção no Hiperbolóide de Minkowski de um plano que está no modelo Beltrami-Klein  
+        /// utilizando um GameObject como referência global.
+        /// </summary>
         public static void MeshKleinToMinkowski(GameObject meshObject, GameObject transformReference)
         {
             Mesh mesh = meshObject.GetComponent<MeshFilter>().mesh;
@@ -47,6 +59,11 @@ namespace Hyperbolic.Tile
             mesh.vertices = vertices;
         }
 
+        /// <summary>
+        /// Movimentação discreta no Hiperbolóide de Minkowski. Por conta da holonomia, movimentar
+        /// no eixo x e depois no eixo y resulta em uma posição diferente de movimentar primeiro no
+        /// eixo y e depois no eixo x. 
+        /// </summary>
         public static void MoveDiscrete(GameObject meshObject, float x, float y, bool xFirst)
         {
             Mesh mesh = meshObject.GetComponent<MeshFilter>().mesh;
@@ -67,6 +84,10 @@ namespace Hyperbolic.Tile
             mesh.vertices = vertices;
         }
 
+        /// <summary>
+        /// Movimentação contínua no Hiperbolóide de Minkowski. Utilizando o eixo horizontal para rotacionar
+        /// e o vertical para seguir em frente ou retornar.
+        /// </summary>
         public static void Move(GameObject meshObject, float speed, GameObject transformReference)
         {
             float x = (float)Input.GetAxis("Horizontal") * -speed * (float)Time.deltaTime;
