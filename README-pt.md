@@ -25,3 +25,5 @@ Atualmente podemos usar apenas 13 tiles por chunk seguindo o padrão de mapeamen
 ![chunk pattern](https://github.com/paulogcosta/HyperbolicTileMapping/blob/main/Assets/GitHub/chunk-map.png)
 
 Para renderizar e mover o chunk criado, basta chamar o método público **Initialize** do seu Chunk Object e usar os eixos horizontais e verticais para movimentar.
+
+![movement](Assets/GitHub/hyper-move.gif)

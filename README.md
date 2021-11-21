@@ -25,3 +25,5 @@ Currently you can set just 13 tiles to a chunk, following the pattern below, but
 ![chunk pattern](https://github.com/paulogcosta/HyperbolicTileMapping/blob/main/Assets/GitHub/chunk-map.png)
 
 To render and move the chunk you will need just to call the public method **Initialize** of your Chunk Object, and use the horizontal and vertical axis to move it.
+
+![movement](Assets/GitHub/hyper-move.gif)
