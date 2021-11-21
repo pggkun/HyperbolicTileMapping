@@ -2,14 +2,14 @@
 Extensão da Unity Engine em formato custom package que habilita o Unity a renderizar e mover o Plano Hiperbólico usando tile maps.
 [Readme in English](README.md)
 
-## Installation
+## Instalação
 Usando o package manager do Unity, selecione: **Add package from git URL** e insira o link:
 ```
 https://github.com/paulogcosta/HyperbolicTileMapping.git?path=/Assets/Release
 ```
 ou faça download do **.unitypackage** da ultima versão na [página de releases](https://github.com/paulogcosta/HyperbolicTileMapping/releases/tag/1.0.0)
 
-## Usage
+## Uso
 Primeiro, crie seus Tile Objects e atribua o prefab do [plano subdividido](https://github.com/paulogcosta/HyperbolicTileMapping/blob/main/Assets/Release/Resources/Prefabs/5SubvidisionSquareTile.prefab) ou um prefab customizado, e atribua uma textura.
 
 ![creating tile object](https://github.com/paulogcosta/HyperbolicTileMapping/blob/main/Assets/GitHub/create-tile.png)
