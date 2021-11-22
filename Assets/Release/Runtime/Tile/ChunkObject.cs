@@ -11,6 +11,8 @@ namespace Hyperbolic.Tile
 
         public void Initialize()
         {
+            GameObject reference = Instantiate(new GameObject(), new Vector3(0, 0, 0), Quaternion.identity);
+            reference.name = "Reference";
             foreach(ChunkTile tile in tiles)
             {
                 GameObject obj = Instantiate(tile.tile.TilePrefab, new Vector3(0,0,0), Quaternion.Euler(new Vector3(-90, 0, 0)));

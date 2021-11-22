@@ -35,20 +35,51 @@ namespace Hyperbolic.Tile
 
         private void AssignPosition(float step)
         {
-            step = step+ 0.025f;
-            if (chunkMap == ChunkMap.center) TileUtils.MoveDiscrete(gameObject, 0, 0, false);
-            if (chunkMap == ChunkMap.up) TileUtils.MoveDiscrete(gameObject, step, 0, false);
-            if (chunkMap == ChunkMap.left) TileUtils.MoveDiscrete(gameObject, 0, step, false);
-            if (chunkMap == ChunkMap.down) TileUtils.MoveDiscrete(gameObject, -step, 0, false);
-            if (chunkMap == ChunkMap.right) TileUtils.MoveDiscrete(gameObject, 0, -step, false);
-            if (chunkMap == ChunkMap.leftUp) TileUtils.MoveDiscrete(gameObject, step, step, false);
-            if (chunkMap == ChunkMap.upLeft) TileUtils.MoveDiscrete(gameObject, step, step, true);
-            if (chunkMap == ChunkMap.rightDown) TileUtils.MoveDiscrete(gameObject, -step, -step, false);
-            if (chunkMap == ChunkMap.downRight) TileUtils.MoveDiscrete(gameObject, -step, -step, true);
-            if (chunkMap == ChunkMap.rightUp) TileUtils.MoveDiscrete(gameObject, step, -step, false);
-            if (chunkMap == ChunkMap.upRight) TileUtils.MoveDiscrete(gameObject, step, -step, true);
-            if (chunkMap == ChunkMap.leftDown) TileUtils.MoveDiscrete(gameObject, -step, step, false);
-            if (chunkMap == ChunkMap.downLeft) TileUtils.MoveDiscrete(gameObject, -step, step, true);
+            step = step + 0.025f;
+            switch (chunkMap)
+            {
+                case (ChunkMap.center):
+                    TileUtils.MoveDiscrete(gameObject, 0, 0, false);
+                    break;
+                case (ChunkMap.up):
+                    TileUtils.MoveDiscrete(gameObject, step, 0, false);
+                    break;
+                case (ChunkMap.left):
+                    TileUtils.MoveDiscrete(gameObject, 0, step, false);
+                    break;
+                case (ChunkMap.down):
+                    TileUtils.MoveDiscrete(gameObject, -step, 0, false);
+                    break;
+                case (ChunkMap.right):
+                    TileUtils.MoveDiscrete(gameObject, 0, -step, false);
+                    break;
+                case (ChunkMap.leftUp):
+                    TileUtils.MoveDiscrete(gameObject, step, step, false);
+                    break;
+                case (ChunkMap.upLeft):
+                    TileUtils.MoveDiscrete(gameObject, step, step, true);
+                    break;
+                case (ChunkMap.rightDown):
+                    TileUtils.MoveDiscrete(gameObject, -step, -step, false);
+                    break;
+                case (ChunkMap.downRight):
+                    TileUtils.MoveDiscrete(gameObject, -step, -step, true);
+                    break;
+                case (ChunkMap.rightUp):
+                    TileUtils.MoveDiscrete(gameObject, step, -step, false);
+                    break;
+                case (ChunkMap.upRight):
+                    TileUtils.MoveDiscrete(gameObject, step, -step, true);
+                    break;
+                case (ChunkMap.leftDown):
+                    TileUtils.MoveDiscrete(gameObject, -step, step, false);
+                    break;
+                case (ChunkMap.downLeft):
+                    TileUtils.MoveDiscrete(gameObject, -step, step, true);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
