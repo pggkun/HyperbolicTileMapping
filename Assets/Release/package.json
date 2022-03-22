@@ -1,6 +1,6 @@
 {
     "name": "com.pggc.hyperbolic",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "displayName": "Hyperbolic Tile Mapping",
     "description": "Allows Unity to render and move the Hyperbolic Plane using tile maps",
     "unity": "2019.1",

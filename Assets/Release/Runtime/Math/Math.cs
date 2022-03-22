@@ -23,22 +23,6 @@ namespace Hyperbolic.Math
         }
 
         /// <summary>
-        /// Retorna o ponto correspondente ao vértice projetado no Disco de Poincaré
-        /// a partir do Modelo do Hiperbolóide de Minkowski.
-        /// </summary>
-        public static VectorD3 MinkowskiToPoincare(VectorD3 P)
-        {
-            VectorD3 P0 = new VectorD3(0.0, 0.0, -1.0);
-            double intersectionHeight = MathD.Sqrt((P.x * P.x) + (P.y + P.y) + 1.0);
-            VectorD3 Ps = new VectorD3(P.x, P.y, intersectionHeight);
-            VectorD3 V = P - P0;
-            double t = P0.z / V.z;
-            double pX = P0.x + (t * V.x);
-            double pY = P0.y + (t * V.y);
-            return new VectorD3(pX, pY, 0.0);
-        }
-
-        /// <summary>
         /// Retorna o ponto correspondente ao vértice projetado no hiperbolóide
         /// de Minkowski a partir da projeção de Beltrami-Klein.
         /// </summary>
