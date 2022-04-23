@@ -5,7 +5,7 @@ Extensão da Unity Engine em formato custom package que habilita o Unity a rende
 ## Instalação
 Usando o package manager do Unity, selecione: **Add package from git URL** e insira o link:
 ```
-https://github.com/paulogcosta/HyperbolicTileMapping.git?path=/Assets/Release
+https://github.com/pggkun/HyperbolicTileMapping.git?path=/Assets/Release
 ```
 ou faça download do **.unitypackage** da ultima versão na [página de releases](https://github.com/paulogcosta/HyperbolicTileMapping/releases/tag/1.0.0)
 
