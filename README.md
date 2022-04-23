@@ -5,7 +5,7 @@ Unity Engine extension as custom package that allows Unity to render and move th
 ## Installation
 Using Unity package manager, select: **Add package from git URL** with the link:
 ```
-https://github.com/paulogcosta/HyperbolicTileMapping.git?path=/Assets/Release
+https://github.com/pggkun/HyperbolicTileMapping.git?path=/Assets/Release
 ```
 or download the **.unitypackage** from the last release at [releases page](https://github.com/paulogcosta/HyperbolicTileMapping/releases/tag/1.0.0)
 
